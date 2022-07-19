@@ -1,54 +1,32 @@
-var producto = new Array(30);
-var precio = new Array;
-var opcion, max;
+var producto = new Array();
+var precio = new Array();
+var opcion, max, i = 0;
 var bandera = false, bandera1 = false;
 
-do{
-    producto = prompt("Escriba el nombre del producto","");
-    if(isNaN(producto)){
+do {
+    producto[i] = prompt("Escriba el nombre del producto", "");
+    if (isNaN(producto)) {
         bandera == false;
-    }else{
+    } else {
         bandera == true;
-        precio == prompt("Escribe el precio del producto");
-        if(isNaN(precio)){
-            bandera1 == false;
-        }
     }
-}while(bandera == false && bandera1 == false);
-    
-if(bandera == true && bandera1 == true){
-    document.write("Hola");
+} while (bandera == false);
+do {
+    precio[i] = prompt("Escriba el nombre del producto", "");
+    if (isNaN(producto)) {
+        bandera1 == false;
+    } else {
+        bandera1 == true;
+    }
+} while (bandera1 == false);
+if (bandera == true && bandera1 == true) {
+    opcion = (parseInt(prompt("Digite 1-Si desea agregar otro producto, 2-Si desea salir")));
+    switch (opcion) {
+        case 1:
+            break;
+        case 2:
+            break;
+        default:
+
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
