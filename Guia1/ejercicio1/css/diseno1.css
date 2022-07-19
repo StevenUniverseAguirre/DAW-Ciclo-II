@@ -1,0 +1,35 @@
+main{
+    color: #222222;
+    margin: 0 auto;
+    max-width: 1000px;
+    min-width: 100vh;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 5px;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 100px 200px;
+    grid-template-areas: "my-header my-header my-header"
+                         "my-nav my-article my-article"
+                         "my-footer my-footer my-footer";
+}
+
+header{
+    border: 3px solid;
+    grid-area: my-header;
+    background-color: #FFC300;
+}
+nav{
+    border: 3px solid;
+    grid-area: my-nav;
+    background-color: #FFC300;
+}
+article{
+    border: 3px solid;
+    grid-area: my-article;
+    background-color: #FFC300;
+}
+footer{
+    border: 3px solid;
+    grid-area: my-footer;
+    background-color: #FFA69E;
+}
